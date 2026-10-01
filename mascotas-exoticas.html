@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundo Animal - Cuidado de Mascotas Exóticas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="exoticos-styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header-in">
+    <a class="brand" href="#">
+      <img class="brand-logo" alt="Mundo Animal Logo" src="https://lh3.googleusercontent.com/aida/AEtjO1V3Ovist3X89tBySk0s0YJcn7dERn4jkoXpOZcXm670X0fTGl9xubd4BMmq9uiHz0WyZRswPdS0NXo8ZmuXr_v-IH9oIifXyOiL7whClhKBg3H89go1gd2HV7jZvti3GkqzSSW9swx77X85RRxYoX3K4KqEhWFFgP0rUt-uaAqlkiw0rFikkWkk5nlzpko39_dGnhyRSD_FhY0gaB5quXVPVODVTtRtyg7BXFJ0_vRLPcpsc_U-WwbNt-c">
+      <span class="brand-name">Mundo Animal</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="mascotas-comunes.html">Mascotas Comunes</a>
+      <a href="mascotas-exoticas.html" class="active">Mascotas Exóticas</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" type="button" aria-label="Buscar"><span class="ms ms-xl">search</span></button>
+      <button class="contact-btn" type="button">Contáctanos</button>
+    </div>
+  </div>
+</header>
+<section class="hero">
+  <div class="container hero-in">
+    <div class="hero-text">
+      <div class="badge"><span class="ms ms-sm fill">eco</span> GUÍA DE TENENCIA RESPONSABLE Y HÁBITAT</div>
+      <h1>Cuidado y Manejo de <span class="accent">Mascotas Exóticas</span></h1>
+      <p>Protocolos microclimáticos, requerimientos biológicos de espectro solar UVA/UVB y normativas legales especializadas para salvaguardar el bienestar animal en el hogar.</p>
+    </div>
+    <div class="verify">
+      <div class="verify-icon"><span class="ms">verified</span></div>
+      <div>
+        <p class="verify-label">Validación Veterinaria</p>
+        <p class="verify-text">Especialistas Acreditados</p>
+      </div>
+    </div>
+  </div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+</section>
+<main class="container main">
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="card">
+        <div class="card-title secondary"><span class="ms ms-lg">pets</span><h2>Especie Especializada</h2></div>
+        <label class="field-label" for="species-select">Selecciona mascota exótica autorizada:</label>
+        <div class="select-wrap">
+          <select id="species-select">
+            <option value="pogona" selected>Pogonas (Dragón Barbudo)</option>
+            <option value="hurones">Hurón</option>
+            <option value="erizos">Erizos de Tierra</option>
+            <option value="geckos">Geckos Leopardo</option>
+            <option value="psitacidas">Aves Psitácidas</option>
+            <option value="ajolotes">Ajolotes</option>
+          </select>
+          <span class="ms ms-xl select-arrow">expand_more</span>
+        </div>
+        <div class="note">
+          <span class="ms ms-lg">info</span>
+          <p>Parámetros técnicos ajustados a especímenes registrados legalmente.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title tertiary"><span class="ms ms-lg">filter_hdr</span><h3>Filtro por Hábitat</h3></div>
+        <p class="small muted mb-4">Requisitos de bioclima y zonificación según la biología natural del individuo:</p>
+        <div class="options">
+          <label class="option">
+            <div class="option-l"><span class="ms c-ter">sunny</span><span>Terrarios desérticos</span></div>
+            <input type="radio" name="habitat" checked>
+          </label>
+          <label class="option">
+            <div class="option-l"><span class="ms c-sec">rainy</span><span>Terrarios tropicales</span></div>
+            <input type="radio" name="habitat">
+          </label>
+          <label class="option">
+            <div class="option-l"><span class="ms c-ter">water</span><span>Acuaterrarios</span></div>
+            <input type="radio" name="habitat">
+          </label>
+          <label class="option">
+            <div class="option-l"><span class="ms c-sec">domain</span><span>Espacios para mamíferos</span></div>
+            <input type="radio" name="habitat">
+          </label>
+        </div>
+      </div>
+      <div class="quick">
+        <div class="quick-top">
+          <span class="quick-label">Termorregulación</span>
+          <span class="ms ms-sm c-pri">device_thermostat</span>
+        </div>
+        <div class="quick-value" id="species-temp">38°-42°C</div>
+        <p class="small muted mt-1">Gradiente térmico óptimo en punto focal de asoleamiento diurno para Pogona vitticeps.</p>
+      </div>
+    </aside>
+    <section class="content">
+      <article class="panel">
+        <div class="panel-head">
+          <div>
+            <div class="tags">
+              <span class="tag tag-sec" id="species-class">Reptilia • Agamidae</span>
+              <span class="tag tag-ter">Nivel Intermedio</span>
+            </div>
+            <h2 class="h-lg" id="species-name">Pogona vitticeps (Dragón Barbudo)</h2>
+          </div>
+          <button class="btn-primary" type="button"><span class="ms ms-sm">download</span> Descargar Ficha PDF</button>
+        </div>
+        <div class="spec-grid">
+          <div class="photo">
+            <img id="species-img" alt="Dragón barbudo sobre una roca bajo lámparas de calor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzluHZwZ_cEPHXwK5-BHvF00VeNHBFnzak7nR3Ggu9JMfI98H3N6GsXd6mrFz63eFTKNPkH8hANRc4mEeNQWLO-ccxorU6DWgyLhXN_p4aYHlA1GnvtFN0hQOlmxfbT3l2olg_P1AtWk2mcLZRnfQOBj9_IHAPCFOI1XHytuvwa7izsZga0Ps41ffG1Ddq9NqXrHfWdBk18rbJZLl73PDtoRILLdusVxQs0BVyvM5aJqS1Dsw8SWkf">
+            <div class="photo-shade"></div>
+            <div class="photo-cap"><span class="ms ms-sm">photo_camera</span> Origen: <span id="species-origin">Zonas semiáridas de Australia</span></div>
+          </div>
+          <div class="req">
+            <h3 class="req-title"><span class="ms">light_mode</span> Requerimientos Lumínicos y Térmicos</h3>
+            <div class="req-list">
+              <div class="req-item">
+                <div class="req-icon"><span class="ms ms-base">sunny</span></div>
+                <div><span class="req-h">Lámparas UVB 10.0 / 12.0 Indispensables</span><span class="small muted">Síntesis de vitamina D3 y fijación ósea de calcio. Cambio cada 6-9 meses.</span></div>
+              </div>
+              <div class="req-item">
+                <div class="req-icon"><span class="ms ms-base">schedule</span></div>
+                <div><span class="req-h">Fotoperiodo Diurno/Nocturno</span><span class="small muted">12 horas de luz continua y 12 horas de oscuridad absoluta para biorritmo regular.</span></div>
+              </div>
+              <div class="req-item">
+                <div class="req-icon"><span class="ms ms-base">thermostat</span></div>
+                <div><span class="req-h">Zona Fría de Escape</span><span class="small muted">Gradiente a 24°-26°C con termostato digital de doble sonda.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nutrition">
+          <h3 class="nutrition-title"><span class="ms">nutrition</span> Alimentación Especializada y Dietas No Comerciales</h3>
+          <p class="body muted mb-4">A diferencia de perros o gatos, los reptiles y mamíferos exóticos sufren patologías irreversibles por dietas monótonas de pienso comercial. Requieren una formulación viva y vegetal calibrada por edad:</p>
+          <div class="nut-grid">
+            <div class="nut"><span class="nut-h">Insectos Vivos Calibrados</span><p class="small muted">Blaptica dubia, grillos Acheta y langostas alimentados previamente con verduras nutritivas (gut loading).</p></div>
+            <div class="nut"><span class="nut-h">Vegetales con Ratio Ca:P Óptimo</span><p class="small muted">Rúcula, canónigos, hojas de mostaza, escarola y calabaza. Prohibida la lechuga iceberg y espinacas en exceso.</p></div>
+            <div class="nut"><span class="nut-h">Suplementación Mineral</span><p class="small muted">Calcio puro sin fósforo espolvoreado en 4 tomas semanales y multivitaminas con D3 cada 15 días.</p></div>
+          </div>
+        </div>
+      </article>
+      <article class="legal">
+        <div class="legal-in">
+          <div class="legal-icon"><span class="ms" style="font-size:1.5rem">gavel</span></div>
+          <div>
+            <div class="legal-kicker"><span>Marco Jurídico y Conservación</span><span class="legal-sub">• CITES / Ley de Bienestar Animal</span></div>
+            <h2 class="h-md mb-2">Responsabilidad Ética y Tenencia Legal de Especies Exóticas</h2>
+            <p class="body muted mb-4">El tráfico ilegal de fauna silvestre es una de las principales amenazas para la biodiversidad planetaria. La posesión de animales exóticos está sujeta a rigurosos marcos regulatorios internacionales y nacionales:</p>
+            <div class="legal-grid small muted">
+              <div class="legal-item"><span class="ms ms-base c-pri">document_scanner</span><div><strong>Factura Legal y CITES</strong>Verifica siempre el número de importación CITES o certificado de cría en cautividad europeo (Anexo A o B).</div></div>
+              <div class="legal-item"><span class="ms ms-base c-pri">warning</span><div><strong>Especies Invasoras Prohibidas</strong>La liberación de cualquier espécimen al entorno autóctono es un delito penal ecológico severo.</div></div>
+            </div>
+            <div class="legal-foot">
+              <span>¿Dudas sobre la legalidad de un ejemplar en tu región?</span>
+              <a href="#">Consultar Catálogo Oficial de Especies Permitidas <span class="ms ms-xs">arrow_forward</span></a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="panel">
+        <div class="dir-head">
+          <div>
+            <h2 class="h-md dir-title"><span class="ms c-ter">medical_services</span> Directorio de Veterinarios Certificados en Exóticos</h2>
+            <p class="small muted">Centros hospitalarios con equipos especializados de anestesia inhalatoria, endoscopia y UCI biológica.</p>
+          </div>
+          <button class="filter-btn" type="button"><span class="ms ms-sm">location_on</span> Filtrar por Ciudad</button>
+        </div>
+        <div class="dir-grid">
+          <div class="clinic">
+            <div class="clinic-top"><h4>Hospital Veterinario Sauros</h4><span class="pill pill-ter">Urgencias 24h</span></div>
+            <p class="small muted mb-3">Especialistas en Reptiles, Anfibios y Aves Rapaces. Acreditación GMV Exotics.</p>
+            <div class="clinic-foot"><span><span class="ms ms-xs">phone</span> +34 912 345 678</span><span class="muted">Madrid, España</span></div>
+          </div>
+          <div class="clinic">
+            <div class="clinic-top"><h4>Centro Clínico Selva Urbana</h4><span class="pill pill-sec">Cita Previa</span></div>
+            <p class="small muted mb-3">Cirugía avanzada en pequeños mamíferos (hurones, conejos, erizos) y psitácidas.</p>
+            <div class="clinic-foot"><span><span class="ms ms-xs">phone</span> +34 934 890 123</span><span class="muted">Barcelona, España</span></div>
+          </div>
+          <div class="clinic">
+            <div class="clinic-top"><h4>BioFauna Medicina Exótica</h4><span class="pill pill-ter">Urgencias 24h</span></div>
+            <p class="small muted mb-3">Laboratorio de patología celular, hematología comparada y diagnóstico por imagen.</p>
+            <div class="clinic-foot"><span><span class="ms ms-xs">phone</span> +34 963 112 233</span><span class="muted">Valencia, España</span></div>
+          </div>
+          <div class="clinic">
+            <div class="clinic-top"><h4>Clínica Veterinaria Al-Andalus Exóticos</h4><span class="pill pill-sec">Cita Previa</span></div>
+            <p class="small muted mb-3">Medicina acuática especializada en axolotes y asesoramiento de hábitats bioclimáticos.</p>
+            <div class="clinic-foot"><span><span class="ms ms-xs">phone</span> +34 954 678 990</span><span class="muted">Sevilla, España</span></div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer-in">
+    <div class="footer-brand">
+      <a class="footer-logo" href="#"><img alt="Mundo Animal Logo" src="https://lh3.googleusercontent.com/aida/AEtjO1V3Ovist3X89tBySk0s0YJcn7dERn4jkoXpOZcXm670X0fTGl9xubd4BMmq9uiHz0WyZRswPdS0NXo8ZmuXr_v-IH9oIifXyOiL7whClhKBg3H89go1gd2HV7jZvti3GkqzSSW9swx77X85RRxYoX3K4KqEhWFFgP0rUt-uaAqlkiw0rFikkWkk5nlzpko39_dGnhyRSD_FhY0gaB5quXVPVODVTtRtyg7BXFJ0_vRLPcpsc_U-WwbNt-c"><span>Mundo Animal</span></a>
+      <span class="footer-sep">|</span>
+      <p class="small muted">© 2024 Mundo Animal. Enciclopedia y Blog Familiar de Vida Animal.</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">Inicio</a>
+      <a href="mascotas-comunes.html">Mascotas Comunes</a>
+      <a href="mascotas-exoticas.html" class="active">Mascotas Exóticas</a>
+      <a href="#">Curiosidades del Reino Animal</a>
+      <a href="#">Guías de Bienestar</a>
+      <a href="#">Aviso Legal y Ética</a>
+    </nav>
+  </div>
+</footer>
+<script src="exoticos-script.js"></script>
+</body>
+</html>

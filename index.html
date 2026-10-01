@@ -8,6 +8,7 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<<<<<<< HEAD
 
 <!-- Tailwind (CDN) y tu JavaScript (script.js lleva la configuración de Tailwind, por eso va aquí) -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -18,6 +19,13 @@
 <body class="bg-background text-on-surface antialiased selection:bg-primary selection:text-surface min-h-screen flex flex-col">
 
 <!-- ================= ENCABEZADO ================= -->
+=======
+    <script src="inicio-script.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="inicio-styles.css">
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary selection:text-surface min-h-screen flex flex-col">
+>>>>>>> 90dcc72 (Proyecto unificado)
 <header class="bg-surface/90 backdrop-blur-md top-0 sticky z-50 shadow-md">
   <div class="flex justify-between items-center w-full px-6 md:px-10 max-w-7xl mx-auto h-20">
     <a class="flex items-center gap-3 group" href="#">
@@ -27,6 +35,7 @@
         <span class="text-label-sm font-label-sm text-tertiary hidden sm:inline -mt-1 tracking-widest uppercase">Enciclopedia &amp; Blog</span>
       </div>
     </a>
+<<<<<<< HEAD
 
     <!-- Navegación escritorio -->
     <nav class="hidden md:flex items-center space-x-6 text-label-lg font-label-lg">
@@ -35,6 +44,13 @@
       <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#">Mascotas Exóticas</a>
     </nav>
 
+=======
+    <nav class="hidden md:flex items-center space-x-6 text-label-lg font-label-lg">
+      <a class="text-primary font-bold border-b-2 border-primary pb-1" href="index.html">Inicio</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="mascotas-comunes.html">Mascotas Comunes</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="mascotas-exoticas.html">Mascotas Exóticas</a>
+    </nav>
+>>>>>>> 90dcc72 (Proyecto unificado)
     <div class="flex items-center space-x-3">
       <button aria-label="Buscar" class="w-10 h-10 rounded-full flex items-center justify-center hover:text-primary hover:bg-surface-container transition-all text-on-surface-variant">
         <span class="material-symbols-outlined">search</span>
@@ -45,17 +61,25 @@
       </button>
     </div>
   </div>
+<<<<<<< HEAD
 
   <!-- Menú móvil -->
   <div class="hidden md:hidden px-6 pt-2 pb-6 bg-surface-container-low border-b border-outline-variant/30 space-y-3" id="mobile-menu">
     <a class="block py-2 text-primary font-bold border-l-2 border-primary pl-3" href="#">Inicio</a>
     <a class="block py-2 text-on-surface-variant hover:text-primary pl-3" href="#">Mascotas Comunes</a>
     <a class="block py-2 text-on-surface-variant hover:text-primary pl-3" href="#">Mascotas Exóticas</a>
+=======
+  <div class="hidden md:hidden px-6 pt-2 pb-6 bg-surface-container-low border-b border-outline-variant/30 space-y-3" id="mobile-menu">
+    <a class="block py-2 text-primary font-bold border-l-2 border-primary pl-3" href="index.html">Inicio</a>
+    <a class="block py-2 text-on-surface-variant hover:text-primary pl-3" href="mascotas-comunes.html">Mascotas Comunes</a>
+    <a class="block py-2 text-on-surface-variant hover:text-primary pl-3" href="mascotas-exoticas.html">Mascotas Exóticas</a>
+>>>>>>> 90dcc72 (Proyecto unificado)
     <div class="pt-2">
       <a class="w-full inline-flex justify-center items-center py-2.5 rounded-lg bg-primary text-surface font-label-lg text-label-lg font-bold" href="#">Contáctanos</a>
     </div>
   </div>
 </header>
+<<<<<<< HEAD
 
 <main class="flex-grow">
 
@@ -64,12 +88,19 @@
     <div class="absolute -top-24 left-1/4 w-96 h-96 bg-tertiary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
     <div class="absolute top-1/3 -right-20 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
+=======
+<main class="flex-grow">
+  <section class="relative overflow-hidden pt-12 md:pt-20 pb-16 md:pb-24 px-6 md:px-10 max-w-7xl mx-auto">
+    <div class="absolute -top-24 left-1/4 w-96 h-96 bg-tertiary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-1/3 -right-20 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+>>>>>>> 90dcc72 (Proyecto unificado)
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
       <div class="lg:col-span-7 space-y-6">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/60 border border-outline-variant/40">
           <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
           <span class="text-label-sm font-label-sm text-primary tracking-wider uppercase">Blog Familiar de Vida y Reino Animal</span>
         </div>
+<<<<<<< HEAD
 
         <h1 class="text-headline-xl-mobile md:text-display-lg font-display-lg text-on-background tracking-tight">
           Descubran la magia viva de la <span class="text-primary underline decoration-primary/40 underline-offset-8">naturaleza</span> en familia.
@@ -79,6 +110,14 @@
           Un espacio cálido e interactivo diseñado para aprender juntos sobre los misterios de la fauna salvaje, la ciencia de los ecosistemas y el cuidado responsable y empático de nuestros compañeros vivos.
         </p>
 
+=======
+        <h1 class="text-headline-xl-mobile md:text-display-lg font-display-lg text-on-background tracking-tight">
+          Descubran la magia viva de la <span class="text-primary underline decoration-primary/40 underline-offset-8">naturaleza</span> en familia.
+        </h1>
+        <p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Un espacio cálido e interactivo diseñado para aprender juntos sobre los misterios de la fauna salvaje, la ciencia de los ecosistemas y el cuidado responsable y empático de nuestros compañeros vivos.
+        </p>
+>>>>>>> 90dcc72 (Proyecto unificado)
         <div class="pt-4 flex flex-col sm:flex-row gap-4">
           <a class="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-primary text-on-primary-fixed font-label-lg text-label-lg font-bold gold-glow gold-glow-hover transition-all group" href="#">
             <span class="material-symbols-outlined text-on-primary-fixed">pets</span>
@@ -91,14 +130,20 @@
             <span class="material-symbols-outlined text-tertiary group-hover:translate-x-1 transition-transform">auto_awesome</span>
           </a>
         </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 90dcc72 (Proyecto unificado)
         <div class="pt-4 flex flex-wrap items-center gap-6 text-on-surface-variant text-label-sm font-label-sm border-t border-outline-variant/30">
           <div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary">verified</span><span>Revisado por Veterinarios y Biólogos</span></div>
           <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">family_restroom</span><span>Contenido Educativo para Todas las Edades</span></div>
           <div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">favorite</span><span>100% Ética y Bienestar</span></div>
         </div>
       </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 90dcc72 (Proyecto unificado)
       <div class="lg:col-span-5 relative">
         <div class="relative mx-auto rounded-3xl p-3 bg-surface-container-low border border-primary/20 gold-glow">
           <div class="relative overflow-hidden rounded-2xl h-[420px]">
@@ -123,8 +168,11 @@
       </div>
     </div>
   </section>
+<<<<<<< HEAD
 
   <!-- ================= PÍLDORAS DE CONOCIMIENTO ================= -->
+=======
+>>>>>>> 90dcc72 (Proyecto unificado)
   <section class="py-6 bg-surface-container-lowest/80 border-y border-outline-variant/20">
     <div class="max-w-7xl mx-auto px-6 md:px-10">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
@@ -134,7 +182,10 @@
         </div>
         <p class="text-body-sm font-body-sm text-on-surface-variant">Datos breves para compartir durante la cena o camino a la escuela</p>
       </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 90dcc72 (Proyecto unificado)
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div class="p-4 rounded-xl bg-surface-container border border-outline-variant/30 flex items-start gap-3 hover:border-primary/50 transition-colors">
           <div class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-sm">sound_detection_dog_barking</span></div>
@@ -167,8 +218,11 @@
       </div>
     </div>
   </section>
+<<<<<<< HEAD
 
   <!-- ================= CURIOSIDADES DEL REINO ANIMAL ================= -->
+=======
+>>>>>>> 90dcc72 (Proyecto unificado)
   <section class="py-16 md:py-24 px-6 md:px-10 max-w-7xl mx-auto">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
       <div>
@@ -179,18 +233,25 @@
         <h2 class="text-headline-xl-mobile md:text-headline-xl font-headline-xl text-on-background">Curiosidades del Reino Animal</h2>
         <p class="text-body-md font-body-md text-on-surface-variant max-w-xl mt-2">Sumérgete en cuatro adaptaciones asombrosas que desafían nuestra comprensión de la vida en la Tierra.</p>
       </div>
+<<<<<<< HEAD
 
       <!-- Filtros (los maneja script.js) -->
+=======
+>>>>>>> 90dcc72 (Proyecto unificado)
       <div class="flex flex-wrap items-center gap-2">
         <button class="px-4 py-1.5 rounded-full bg-tertiary text-surface-container-lowest font-label-md text-label-md font-bold transition-all" data-filtro="todas">Destacadas</button>
         <button class="px-4 py-1.5 rounded-full bg-secondary-container/50 text-primary border border-outline-variant/30 font-label-md text-label-md hover:bg-secondary-container transition-all" data-filtro="comportamiento">Comportamiento</button>
         <button class="px-4 py-1.5 rounded-full bg-secondary-container/50 text-primary border border-outline-variant/30 font-label-md text-label-md hover:bg-secondary-container transition-all" data-filtro="fisiologia">Fisiología</button>
       </div>
     </div>
+<<<<<<< HEAD
 
     <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
 
       <!-- Tarjeta 1: Elefantes -->
+=======
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+>>>>>>> 90dcc72 (Proyecto unificado)
       <article class="md:col-span-7 rounded-2xl bg-surface-container-low border border-primary/20 p-6 flex flex-col justify-between hover:border-primary/60 transition-all group overflow-hidden relative" data-categoria="comportamiento">
         <div class="relative overflow-hidden rounded-xl h-64 mb-6">
           <img alt="Una elefanta y su cría caminando por la sabana al atardecer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmNwdMbR_8OZW5HL-mx9ZQtZ0yLv_Bv6hcUeZxZNljJzNbyWg7i26-BrleEuRaLXlKbGZjJs5AmhpjlF7J4zSwMpLWLCI70jtbUkMYYIR1URoRM-5MMqDyoo_nyCJqFsdHKTl-Irf-BAB-Kp7neftF-V3UY7ZEEMte6-POiZOGF3zvRePxP4iVkILNGyiG_B3_Sc9dK6_5x6izrpRpOrWxb_fCkSgcOzDEZZGnqaezMnmneCc89x89">
@@ -216,8 +277,11 @@
           </div>
         </div>
       </article>
+<<<<<<< HEAD
 
       <!-- Tarjeta 2: Visión UV -->
+=======
+>>>>>>> 90dcc72 (Proyecto unificado)
       <article class="md:col-span-5 rounded-2xl bg-surface-container-low border border-primary/20 p-6 flex flex-col justify-between hover:border-tertiary/60 transition-all group overflow-hidden" data-categoria="fisiologia">
         <div class="relative overflow-hidden rounded-xl h-48 mb-5">
           <img alt="Un colibrí frente a flores con patrones de luz ultravioleta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnB0LpT-rvy_CAIvdikoKtpbnymD-mS282uHnLOD_VYT1Zhs-4cHitgsbKf36Aw0qwNzvZQmWVRj0OupaP-gtg2RHbPHIBFN4KpSRhv6FtSD45zWxKJz2wv1xyZdPWUnaW_sANKHcNngaHq8hqHPxuObv7p6uV-ro8LSqUQG8VWLIX6cS1M1qheQZwNMkQzLvIyeecOkLdBjPZNsrvJsmt10WyfX-MORgFtBkSIGpKP_fi7dmTAzU7">
@@ -235,8 +299,11 @@
           </div>
         </div>
       </article>
+<<<<<<< HEAD
 
       <!-- Tarjeta 3: Pulpos -->
+=======
+>>>>>>> 90dcc72 (Proyecto unificado)
       <article class="md:col-span-5 rounded-2xl bg-surface-container-low border border-primary/20 p-6 flex flex-col justify-between hover:border-tertiary/60 transition-all group overflow-hidden" data-categoria="fisiologia">
         <div class="relative overflow-hidden rounded-xl h-48 mb-5">
           <img alt="Un pulpo sobre una roca volcánica bajo luz turquesa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5PxvTvcchcrGl7jteO8fH2uOrk0bS0xzf2HtK8lbeShtQzgGZqAYba_0vM9P8YQ9I9IFzOMq_CFS6fzt9Bglsfkpyu6EyXf0ZG7F9nNv0Dn446DQGkoGzp_u-2t60QuZIduzr3cwl0MFeqlALuCK2UWngiaZ2r-1Upil8nsZcWvIVcD5EtPaz8EndS-AhX8wIdWu6sw2HqUCxRSPKheiNHddK0IM1-YyX7kqhK6HwvbV4QLZU6vfB">
@@ -254,8 +321,11 @@
           </div>
         </div>
       </article>
+<<<<<<< HEAD
 
       <!-- Tarjeta 4: Córvidos y loros -->
+=======
+>>>>>>> 90dcc72 (Proyecto unificado)
       <article class="md:col-span-7 rounded-2xl bg-surface-container-low border border-primary/20 p-6 flex flex-col justify-between hover:border-primary/60 transition-all group overflow-hidden" data-categoria="comportamiento">
         <div class="relative overflow-hidden rounded-xl h-64 mb-6">
           <img alt="Dos cuervos y un guacamayo resolviendo un rompecabezas de madera" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3KeGTFVk_64RpiodDlUq1h4wo0h_HoUidcjbZxi2Nsz1LmNsFQVRTbswVlqrK_8PtNpPHvtPzo7xZclsiuRRAna_ilTl79a9s0Hwl8JH-0uNl3j5Is9mEYaVSOQaAzCz8lNMBh_Qu6pKaqH5_qalOhDpjhV62mF7azrSb1HtoxdG9GCrwT1eEd7zKrc2TH-39OqO1Pjqa6wSXXQlbxw_coQIoAHmuDYxbI08MEkn10bi-ccus6Fu6">
@@ -274,11 +344,16 @@
           </div>
         </div>
       </article>
+<<<<<<< HEAD
 
     </div>
   </section>
 
   <!-- ================= BANNER DE COMUNIDAD ================= -->
+=======
+    </div>
+  </section>
+>>>>>>> 90dcc72 (Proyecto unificado)
   <section class="py-12 bg-surface-container-lowest">
     <div class="max-w-7xl mx-auto px-6 md:px-10">
       <div class="rounded-3xl bg-gradient-to-r from-surface-container to-secondary-container/40 border border-primary/30 p-8 md:p-12 relative overflow-hidden">
@@ -310,8 +385,11 @@
     </div>
   </section>
 </main>
+<<<<<<< HEAD
 
 <!-- ================= PIE DE PÁGINA ================= -->
+=======
+>>>>>>> 90dcc72 (Proyecto unificado)
 <footer class="bg-surface-container-lowest border-t border-outline-variant/20">
   <div class="w-full px-6 md:px-12 py-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
     <div class="flex items-center gap-3">
@@ -319,9 +397,15 @@
       <span class="text-headline-sm font-headline-sm font-bold text-primary">Mundo Animal</span>
     </div>
     <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-label-md font-label-md text-on-surface-variant">
+<<<<<<< HEAD
       <a class="text-primary underline opacity-80 hover:opacity-100 transition-opacity" href="#">Inicio</a>
       <a class="hover:text-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Mascotas Comunes</a>
       <a class="hover:text-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Mascotas Exóticas</a>
+=======
+      <a class="text-primary underline opacity-80 hover:opacity-100 transition-opacity" href="index.html">Inicio</a>
+      <a class="hover:text-primary opacity-80 hover:opacity-100 transition-opacity" href="mascotas-comunes.html">Mascotas Comunes</a>
+      <a class="hover:text-primary opacity-80 hover:opacity-100 transition-opacity" href="mascotas-exoticas.html">Mascotas Exóticas</a>
+>>>>>>> 90dcc72 (Proyecto unificado)
       <a class="hover:text-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Curiosidades del Reino Animal</a>
       <a class="hover:text-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Guías de Bienestar</a>
       <a class="hover:text-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Aviso Legal y Ética</a>
@@ -331,10 +415,13 @@
     </div>
   </div>
 </footer>
+<<<<<<< HEAD
 
 </body>
 </html>
 <body>
     <script src="script.js"></script>
+=======
+>>>>>>> 90dcc72 (Proyecto unificado)
 </body>
 </html>
