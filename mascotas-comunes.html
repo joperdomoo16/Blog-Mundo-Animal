@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dark" lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,307 +8,190 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    <script src="comunes-script.js"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="stylesheet" href="comunes-styles.css">
 </head>
-<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md antialiased selection:bg-primary selection:text-on-primary">
-<header class="bg-surface/90 dark:bg-surface/90 backdrop-blur-md docked full-width top-0 sticky z-50 shadow-md">
-<div class="flex justify-between items-center w-full px-6 md:px-10 max-w-7xl mx-auto h-20">
-<a class="flex items-center gap-3 group" href="index.html">
-<img alt="Mundo Animal Logo" class="h-10 w-10 object-contain rounded-md shadow-sm transition-transform group-hover:scale-105 duration-200" src="https://lh3.googleusercontent.com/aida/AEtjO1V3Ovist3X89tBySk0s0YJcn7dERn4jkoXpOZcXm670X0fTGl9xubd4BMmq9uiHz0WyZRswPdS0NXo8ZmuXr_v-IH9oIifXyOiL7whClhKBg3H89go1gd2HV7jZvti3GkqzSSW9swx77X85RRxYoX3K4KqEhWFFgP0rUt-uaAqlkiw0rFikkWkk5nlzpko39_dGnhyRSD_FhY0gaB5quXVPVODVTtRtyg7BXFJ0_vRLPcpsc_U-WwbNt-c">
-<span class="text-headline-md font-headline-md font-extrabold text-primary dark:text-primary tracking-wide">Mundo Animal</span>
-</a>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors pb-1 text-label-lg font-label-lg" href="index.html">Inicio</a>
-<a class="text-primary dark:text-primary font-bold border-b-2 border-primary pb-1 text-label-lg font-label-lg" href="mascotas-comunes.html">Mascotas Comunes</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors pb-1 text-label-lg font-label-lg" href="mascotas-exoticas.html">Mascotas Exóticas</a>
-</nav>
-<div class="flex items-center gap-4">
-<button aria-label="Buscar" class="p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container dark:hover:bg-surface-container rounded-full transition-all flex items-center justify-center" type="button">
-<span class="material-symbols-outlined" data-icon="search">search</span>
-</button>
-<button class="hidden sm:inline-flex items-center justify-center bg-primary text-on-primary font-label-lg text-label-lg px-5 py-2.5 rounded-lg shadow-md hover:brightness-110 active:scale-[0.98] transition-all" type="button">Contáctanos</button>
-</div>
-</div>
+<body>
+<header class="header">
+  <div class="container header-in">
+    <a class="brand" href="index.html">
+      <span class="brand-name">Mundo Animal</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="mascotas-comunes.html" class="active">Mascotas Comunes</a>
+      <a href="mascotas-exoticas.html">Mascotas Exóticas</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" type="button" aria-label="Buscar"><span class="material-symbols-outlined">search</span></button>
+      <button class="contact-btn" type="button">Contáctanos</button>
+    </div>
+  </div>
 </header>
-<section class="bg-surface-container-low px-6 md:px-10 py-6">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
-<div>
-<div class="flex items-center gap-2 text-label-sm font-label-sm text-tertiary mb-2">
-<span class="">ENCICLOPEDIA FAMILIAR</span>
-<span class="">•</span>
-<span class="text-on-surface-variant">GUÍAS DE CONVIVENCIA</span>
-</div>
-<h1 class="text-headline-lg font-headline-lg text-primary tracking-tight">Cuidado de Mascotas Comunes</h1>
-<p class="text-body-md font-body-md text-on-surface-variant mt-1 max-w-2xl">
-          Protocolos esenciales, enriquecimiento y bienestar diario para los miembros peludos de la familia humana.
-        </p>
-</div>
-<div class="flex items-center gap-3">
-<span class="bg-surface-container-highest px-3 py-1.5 rounded-full text-label-sm font-label-sm text-tertiary flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[16px]" data-icon="verified_user">verified_user</span>
-          Validado por Veterinarios
-        </span>
-</div>
-</div>
+
+<section class="subheader">
+  <div class="container subheader-in">
+    <div>
+      <div class="subheader-kicker">
+        <span>ENCICLOPEDIA FAMILIAR</span>
+        <span>•</span>
+        <span class="muted">GUÍAS DE CONVIVENCIA</span>
+      </div>
+      <h1>Cuidado de Mascotas Comunes</h1>
+      <p class="muted">Protocolos esenciales, enriquecimiento y bienestar diario para los miembros peludos de la familia humana.</p>
+    </div>
+    <div class="verified-badge">
+      <span class="material-symbols-outlined">verified_user</span>
+      Validado por Veterinarios
+    </div>
+  </div>
 </section>
-<main class="max-w-7xl mx-auto w-full px-6 md:px-10 py-8 flex-1">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-<aside class="lg:col-span-4 space-y-6">
-<div class="bg-surface-container-low p-6 rounded-xl shadow-md space-y-4">
-<label class="block text-label-lg font-label-lg text-primary flex items-center gap-2" for="pet-selector">
-<span class="material-symbols-outlined text-tertiary" data-icon="pets">pets</span>
-            Selecciona una mascota
-          </label>
-<div class="relative">
-<select class="w-full bg-surface-container-lowest text-on-surface rounded-lg px-4 py-3 appearance-none focus:outline-none focus:ring-1 focus:ring-tertiary font-body-md text-body-md cursor-pointer pr-10" id="pet-selector">
-<option selected="" value="perros">Perros (Caninos)</option>
-<option value="gatos">Gatos (Felinos)</option>
-<option value="conejos">Conejos Enanos</option>
-<option value="aves">Aves Domésticas</option>
-<option value="peces">Peces de Agua Dulce</option>
-<option value="roedores">Roedores (Hámsteres y Cobayas)</option>
-</select>
-<div class="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none text-primary">
-<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
-</div>
-</div>
-<p class="text-body-sm font-body-sm text-outline">
-            Mostrando parámetros veterinarios combinados para perros y gatos en entornos familiares.
-          </p>
-</div>
-<nav aria-label="Categorías de Cuidado" class="bg-surface-container-low p-6 rounded-xl shadow-md space-y-3">
-<h2 class="text-label-md font-label-md text-primary tracking-wider uppercase mb-4 flex items-center justify-between">
-<span class="">Categorías de Cuidado</span>
-<span class="material-symbols-outlined text-outline text-[18px]" data-icon="menu_book">menu_book</span>
-</h2>
-<ul class="space-y-1.5 font-label-lg text-label-lg">
-<li class="">
-<a class="flex items-center gap-3 px-3.5 py-3 rounded-lg bg-surface-container text-primary font-semibold hover:bg-surface-bright transition-colors group" href="#alimentacion">
-<span class="material-symbols-outlined text-tertiary group-hover:scale-110 transition-transform" data-icon="nutrition">nutrition</span>
-<span class="">Alimentación saludable</span>
-</a>
-</li>
-<li class="">
-<a class="flex items-center gap-3 px-3.5 py-3 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors group" href="#vacunacion">
-<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" data-icon="vaccines">vaccines</span>
-<span class="">Calendario de vacunación y veterinario</span>
-</a>
-</li>
-<li class="">
-<a class="flex items-center gap-3 px-3.5 py-3 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors group" href="#enriquecimiento">
-<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" data-icon="sports_baseball">sports_baseball</span>
-<span class="">Enriquecimiento ambiental y juegos</span>
-</a>
-</li>
-<li class="">
-<a class="flex items-center gap-3 px-3.5 py-3 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors group" href="#higiene">
-<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" data-icon="soap">soap</span>
-<span class="">Higiene y aseo familiar</span>
-</a>
-</li>
-</ul>
-</nav>
-<div class="p-6 rounded-xl bg-secondary-container/40 space-y-4">
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="emergency">emergency</span>
-<div>
-<h3 class="text-headline-sm font-headline-sm text-primary">Protocolo de Urgencias</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
-                Ten a mano el manual portátil con teléfonos de guardia y medidas de contención inmediata.
-              </p>
-</div>
-</div>
-<a class="w-full inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-lg text-label-lg px-4 py-3 rounded-lg font-bold shadow-md hover:brightness-105 active:scale-[0.98] transition-all" href="#">
-<span class="material-symbols-outlined" data-icon="download">download</span>
-            Descargar Guía Rápida (PDF)
-          </a>
-</div>
-</aside>
-<section class="lg:col-span-8 space-y-8">
-<article class="bg-surface-container-low rounded-xl overflow-hidden shadow-md">
-<div class="relative h-64 md:h-80 w-full overflow-hidden">
-<img class="w-full h-full object-cover" alt="Golden retriever y gato calicó descansando juntos en casa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVv4O3dc8G6ipHB4NpirfrLdxa18A05HCeRyWrAMsUh0fyycN-hfhnLwIpkG0u_4rIktOI6ohTAyrMLZ4w94Dktp_62kySQ-eZOV-M2kiG42RPOWW7d1WP2DfdskRsNZHO9ZpjUFF2XPKhSuQmdDkg4dVWqb0YLi10CR5RvscW34Q3dUJbWrcGVLKMJP4p4kKo_eyGWiWoH5ROd4RlDnnvYoKEZBnNsIRSs1K-Esam4qWN2Z4XP3Pf">
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
-<div class="absolute bottom-4 left-6 right-6 flex flex-wrap items-center justify-between gap-2">
-<div class="flex gap-2">
-<span class="rounded-full bg-tertiary text-on-tertiary-container font-label-sm text-label-sm px-3 py-1 font-bold">FICHA ACTIVA</span>
-<span class="rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm px-3 py-1">Hogar Familiar</span>
-</div>
-<span class="text-label-md font-label-md text-on-surface-variant bg-surface-container-lowest/80 px-2.5 py-1 rounded backdrop-blur-sm">Lectura: 6 min</span>
-</div>
-</div>
-<div class="p-6 md:p-8 space-y-6">
-<div>
-<h2 class="text-headline-lg font-headline-lg text-primary">Caninos y Felinos en el Hogar Familiar</h2>
-<p class="text-body-lg font-body-lg text-on-surface-variant mt-2 leading-relaxed">
-                Tanto perros como gatos poseen complejas estructuras de comunicación y necesidades territoriales. Cuando comparten el hogar con niños y adultos, el equilibrio radica en reconocer su lenguaje corporal, respetar sus momentos de calma y estructurar rutinas previsibles.
-              </p>
-</div>
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
-<div class="bg-surface-container p-4 rounded-lg">
-<span class="block text-label-sm font-label-sm text-tertiary">Actividad Diaria</span>
-<span class="text-headline-sm font-headline-sm text-primary font-bold">45-90 min</span>
-<span class="block text-body-sm font-body-sm text-outline mt-0.5">Paseos y juego</span>
-</div>
-<div class="bg-surface-container p-4 rounded-lg">
-<span class="block text-label-sm font-label-sm text-tertiary">Sueño Adulto</span>
-<span class="text-headline-sm font-headline-sm text-primary font-bold">12-16 hrs</span>
-<span class="block text-body-sm font-body-sm text-outline mt-0.5">Zonas tranquilas</span>
-</div>
-<div class="bg-surface-container p-4 rounded-lg">
-<span class="block text-label-sm font-label-sm text-tertiary">Vacunación</span>
-<span class="text-headline-sm font-headline-sm text-primary font-bold">Anual</span>
-<span class="block text-body-sm font-body-sm text-outline mt-0.5">Refuerzos de ley</span>
-</div>
-<div class="bg-surface-container p-4 rounded-lg">
-<span class="block text-label-sm font-label-sm text-tertiary">Desparasitación</span>
-<span class="text-headline-sm font-headline-sm text-primary font-bold">3 Meses</span>
-<span class="block text-body-sm font-body-sm text-outline mt-0.5">Interna y externa</span>
-</div>
-</div>
-<div class="p-6 rounded-xl bg-surface-container space-y-4">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary text-2xl" data-icon="family_restroom">family_restroom</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface">Consejos de Convivencia con Niños Pequeños</h3>
-</div>
-<p class="text-body-md font-body-md text-on-surface-variant">
-                Enseñar a los niños cómo interactuar con mascotas previene accidentes y cultiva empatía genuina hacia los animales:
-              </p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-<div class="flex gap-3 items-start">
-<span class="material-symbols-outlined text-tertiary mt-1" data-icon="check_circle">check_circle</span>
-<div>
-<h4 class="font-bold text-label-lg font-label-lg text-primary">Zona de Descanso Sagrada</h4>
-<p class="text-body-sm font-body-sm text-on-surface-variant">Si el animal está en su cama o rascador, nunca debe ser perturbado ni manipulado bruscamente.</p>
-</div>
-</div>
-<div class="flex gap-3 items-start">
-<span class="material-symbols-outlined text-tertiary mt-1" data-icon="check_circle">check_circle</span>
-<div>
-<h4 class="font-bold text-label-lg font-label-lg text-primary">Caricias en Zonas Neutras</h4>
-<p class="text-body-sm font-body-sm text-on-surface-variant">Priorizar pecho y costados. Evitar sostener cabezas, cola o apretar patas durante el juego.</p>
-</div>
-</div>
-<div class="flex gap-3 items-start">
-<span class="material-symbols-outlined text-tertiary mt-1" data-icon="check_circle">check_circle</span>
-<div>
-<h4 class="font-bold text-label-lg font-label-lg text-primary">Supervisión Activa Siempre</h4>
-<p class="text-body-sm font-body-sm text-on-surface-variant">Un adulto debe mediar las interacciones, especialmente durante las horas de alimentación.</p>
-</div>
-</div>
-<div class="flex gap-3 items-start">
-<span class="material-symbols-outlined text-tertiary mt-1" data-icon="check_circle">check_circle</span>
-<div>
-<h4 class="font-bold text-label-lg font-label-lg text-primary">Lectura de Incomodidad</h4>
-<p class="text-body-sm font-body-sm text-on-surface-variant">Bostezos repetitivos, relamido o cola tensa son peticiones directas de espacio.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="space-y-4">
-<div class="flex items-center justify-between">
-<h3 class="text-headline-sm font-headline-sm text-primary flex items-center gap-2">
-<span class="material-symbols-outlined text-tertiary" data-icon="vital_signs">vital_signs</span>
-                  Señales de Alerta de Salud en Mascotas Comunes
-                </h3>
-<span class="text-label-sm font-label-sm text-outline">Atención Temprana</span>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-<div class="bg-surface-container p-5 rounded-lg border-l-4 border-error space-y-2">
-<div class="flex items-center justify-between text-error font-label-sm font-label-sm">
-<span class="flex items-center gap-1 font-bold">
-<span class="material-symbols-outlined text-[16px]" data-icon="warning">warning</span>
-                      CRÍTICA INMEDIATA
-                    </span>
-</div>
-<h4 class="font-bold text-label-lg font-label-lg text-on-surface">Dificultad Respiratoria o Vómito Continuo</h4>
-<p class="text-body-sm font-body-sm text-on-surface-variant">
-                    Respiración con el hocico abierto en felinos, letargia profunda o incapacidad para orinar. Acudir a urgencias sin demora.
-                  </p>
-</div>
-<div class="bg-surface-container p-5 rounded-lg border-l-4 border-primary space-y-2">
-<div class="flex items-center justify-between text-primary font-label-sm font-label-sm">
-<span class="flex items-center gap-1 font-bold">
-<span class="material-symbols-outlined text-[16px]" data-icon="schedule">schedule</span>
-                      24-48 HORAS
-                    </span>
-</div>
-<h4 class="font-bold text-label-lg font-label-lg text-on-surface">Falta de Apetito o Cojera Repentina</h4>
-<p class="text-body-sm font-body-sm text-on-surface-variant">
-                    Rechazo del alimento por más de 24 horas consecutivas, cambios de temperamento o renguera visible tras reposo.
-                  </p>
-</div>
-<div class="bg-surface-container p-5 rounded-lg border-l-4 border-tertiary space-y-2">
-<div class="flex items-center justify-between text-tertiary font-label-sm font-label-sm">
-<span class="flex items-center gap-1 font-bold">
-<span class="material-symbols-outlined text-[16px]" data-icon="info">info</span>
-                      CONSULTA DE RUTINA
-                    </span>
-</div>
-<h4 class="font-bold text-label-lg font-label-lg text-on-surface">Rascado Excesivo o Pérdida de Pelaje</h4>
-<p class="text-body-sm font-body-sm text-on-surface-variant">
-                    Prurito continuo en orejas, sacudidas de cabeza o zonas alopécicas focales relacionadas con alergias o ectoparásitos.
-                  </p>
-</div>
-</div>
-</div>
-<div class="rounded-xl p-6 md:p-8 bg-surface-container-high flex flex-col md:flex-row items-center justify-between gap-6 shadow-md">
-<div class="space-y-2 text-center md:text-left">
-<span class="text-label-sm font-label-sm text-tertiary font-bold tracking-wider uppercase">Material Educativo Descargable</span>
-<h3 class="text-headline-md font-headline-md text-primary font-bold">Guía Básica de Primeros Auxilios para Mascotas Comunes</h3>
-<p class="text-body-md font-body-md text-on-surface-variant max-w-xl">
-                  Incluye vendajes de emergencia, maniobra de atragantamiento canino/felino, botiquín casero indispensable y fichas de dosis por peso.
-                </p>
-</div>
-<a class="inline-flex items-center gap-3 bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-lg text-label-lg font-bold px-6 py-4 rounded-xl shadow-lg hover:shadow-primary/20 active:scale-[0.98] transition-all whitespace-nowrap" href="#">
-<span class="material-symbols-outlined text-2xl" data-icon="picture_as_pdf">picture_as_pdf</span>
-                Descargar Guía (PDF 4.2 MB)
-              </a>
-</div>
-</div>
-</article>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="bg-surface-container-low p-6 rounded-xl space-y-3">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
-<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
-</div>
-<h3 class="text-headline-sm font-headline-sm text-on-surface">Enriquecimiento Cognitivo Diario</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant">
-              Los tapetes de olfato para perros y los alimentadores tipo puzzle para felinos reducen el cortisol hasta un 40%, canalizando conductas destructivas hacia retos mentales estimulantes.
-            </p>
-</div>
-<div class="bg-surface-container-low p-6 rounded-xl space-y-3">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
-<span class="material-symbols-outlined" data-icon="bathtub">bathtub</span>
-</div>
-<h3 class="text-headline-sm font-headline-sm text-on-surface">Pautas de Higiene Respetuosa</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant">
-              El cepillado diario disminuye la ingestión de bolas de pelo en gatos de manto semilargo y permite identificar a tiempo bultos o garrapatas adheridas en la piel de caninos.
-            </p>
-</div>
-</div>
-</section>
-</div>
+
+<main class="container main-layout">
+  <div class="layout-grid">
+    <aside class="sidebar">
+      <div class="card">
+        <label class="field-label" for="pet-selector">
+          <span class="material-symbols-outlined c-ter">pets</span>
+          Selecciona una mascota
+        </label>
+        <div class="select-wrap">
+          <select id="pet-selector">
+            <option selected value="perros">Perros (Caninos)</option>
+            <option value="gatos">Gatos (Felinos)</option>
+            <option value="conejos">Conejos Enanos</option>
+            <option value="aves">Aves Domésticas</option>
+            <option value="peces">Peces de Agua Dulce</option>
+            <option value="roedores">Roedores (Hámsteres y Cobayas)</option>
+          </select>
+          <span class="material-symbols-outlined select-arrow">expand_more</span>
+        </div>
+        <p class="small muted">Mostrando parámetros veterinarios combinados para perros y gatos en entornos familiares.</p>
+      </div>
+
+      <nav class="card" aria-label="Categorías de Cuidado">
+        <h2 class="card-section-title">
+          <span>Categorías de Cuidado</span>
+          <span class="material-symbols-outlined muted">menu_book</span>
+        </h2>
+        <ul class="cat-list">
+          <li><a class="cat-item cat-active" href="#alimentacion"><span class="material-symbols-outlined c-ter">nutrition</span><span>Alimentación saludable</span></a></li>
+          <li><a class="cat-item" href="#vacunacion"><span class="material-symbols-outlined">vaccines</span><span>Calendario de vacunación y veterinario</span></a></li>
+          <li><a class="cat-item" href="#enriquecimiento"><span class="material-symbols-outlined">sports_baseball</span><span>Enriquecimiento ambiental y juegos</span></a></li>
+          <li><a class="cat-item" href="#higiene"><span class="material-symbols-outlined">soap</span><span>Higiene y aseo familiar</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="emergency-card">
+        <div class="emergency-top">
+          <span class="material-symbols-outlined emergency-icon">emergency</span>
+          <div>
+            <h3>Protocolo de Urgencias</h3>
+            <p class="small muted">Ten a mano el manual portátil con teléfonos de guardia y medidas de contención inmediata.</p>
+          </div>
+        </div>
+        <a class="btn-primary full-width" href="#">
+          <span class="material-symbols-outlined">download</span>
+          Descargar Guía Rápida (PDF)
+        </a>
+      </div>
+    </aside>
+
+    <section class="content">
+      <article class="main-article">
+        <div class="article-hero">
+          <img alt="Golden retriever y gato calicó descansando juntos en casa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVv4O3dc8G6ipHB4NpirfrLdxa18A05HCeRyWrAMsUh0fyycN-hfhnLwIpkG0u_4rIktOI6ohTAyrMLZ4w94Dktp_62kySQ-eZOV-M2kiG42RPOWW7d1WP2DfdskRsNZHO9ZpjUFF2XPKhSuQmdDkg4dVWqb0YLi10CR5RvscW34Q3dUJbWrcGVLKMJP4p4kKo_eyGWiWoH5ROd4RlDnnvYoKEZBnNsIRSs1K-Esam4qWN2Z4XP3Pf">
+          <div class="article-hero-overlay"></div>
+          <div class="article-hero-bottom">
+            <div class="article-tags">
+              <span class="tag tag-ter">FICHA ACTIVA</span>
+              <span class="tag tag-surface">Hogar Familiar</span>
+            </div>
+            <span class="reading-time">Lectura: 6 min</span>
+          </div>
+        </div>
+
+        <div class="article-body">
+          <div>
+            <h2>Caninos y Felinos en el Hogar Familiar</h2>
+            <p class="body-lg muted">Tanto perros como gatos poseen complejas estructuras de comunicación y necesidades territoriales. Cuando comparten el hogar con niños y adultos, el equilibrio radica en reconocer su lenguaje corporal, respetar sus momentos de calma y estructurar rutinas previsibles.</p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-box"><span class="stat-label">Actividad Diaria</span><span class="stat-value">45-90 min</span><span class="stat-sub">Paseos y juego</span></div>
+            <div class="stat-box"><span class="stat-label">Sueño Adulto</span><span class="stat-value">12-16 hrs</span><span class="stat-sub">Zonas tranquilas</span></div>
+            <div class="stat-box"><span class="stat-label">Vacunación</span><span class="stat-value">Anual</span><span class="stat-sub">Refuerzos de ley</span></div>
+            <div class="stat-box"><span class="stat-label">Desparasitación</span><span class="stat-value">3 Meses</span><span class="stat-sub">Interna y externa</span></div>
+          </div>
+
+          <div class="tips-section">
+            <div class="tips-header">
+              <span class="material-symbols-outlined c-pri">family_restroom</span>
+              <h3>Consejos de Convivencia con Niños Pequeños</h3>
+            </div>
+            <p class="muted">Enseñar a los niños cómo interactuar con mascotas previene accidentes y cultiva empatía genuina hacia los animales:</p>
+            <div class="tips-grid">
+              <div class="tip"><span class="material-symbols-outlined c-ter">check_circle</span><div><h4>Zona de Descanso Sagrada</h4><p class="small muted">Si el animal está en su cama o rascador, nunca debe ser perturbado ni manipulado bruscamente.</p></div></div>
+              <div class="tip"><span class="material-symbols-outlined c-ter">check_circle</span><div><h4>Caricias en Zonas Neutras</h4><p class="small muted">Priorizar pecho y costados. Evitar sostener cabezas, cola o apretar patas durante el juego.</p></div></div>
+              <div class="tip"><span class="material-symbols-outlined c-ter">check_circle</span><div><h4>Supervisión Activa Siempre</h4><p class="small muted">Un adulto debe mediar las interacciones, especialmente durante las horas de alimentación.</p></div></div>
+              <div class="tip"><span class="material-symbols-outlined c-ter">check_circle</span><div><h4>Lectura de Incomodidad</h4><p class="small muted">Bostezos repetitivos, relamido o cola tensa son peticiones directas de espacio.</p></div></div>
+            </div>
+          </div>
+
+          <div class="alerts-section">
+            <div class="alerts-header">
+              <h3><span class="material-symbols-outlined c-ter">vital_signs</span> Señales de Alerta de Salud en Mascotas Comunes</h3>
+              <span class="small muted">Atención Temprana</span>
+            </div>
+            <div class="alerts-grid">
+              <div class="alert-card alert-critical">
+                <div class="alert-level"><span class="material-symbols-outlined">warning</span> CRÍTICA INMEDIATA</div>
+                <h4>Dificultad Respiratoria o Vómito Continuo</h4>
+                <p class="small muted">Respiración con el hocico abierto en felinos, letargia profunda o incapacidad para orinar. Acudir a urgencias sin demora.</p>
+              </div>
+              <div class="alert-card alert-moderate">
+                <div class="alert-level"><span class="material-symbols-outlined">schedule</span> 24-48 HORAS</div>
+                <h4>Falta de Apetito o Cojera Repentina</h4>
+                <p class="small muted">Rechazo del alimento por más de 24 horas consecutivas, cambios de temperamento o renguera visible tras reposo.</p>
+              </div>
+              <div class="alert-card alert-routine">
+                <div class="alert-level"><span class="material-symbols-outlined">info</span> CONSULTA DE RUTINA</div>
+                <h4>Rascado Excesivo o Pérdida de Pelaje</h4>
+                <p class="small muted">Prurito continuo en orejas, sacudidas de cabeza o zonas alopécicas focales relacionadas con alergias o ectoparásitos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="download-banner">
+            <div class="download-text">
+              <span class="kicker">Material Educativo Descargable</span>
+              <h3>Guía Básica de Primeros Auxilios para Mascotas Comunes</h3>
+              <p class="muted">Incluye vendajes de emergencia, maniobra de atragantamiento canino/felino, botiquín casero indispensable y fichas de dosis por peso.</p>
+            </div>
+            <a class="btn-primary" href="#">
+              <span class="material-symbols-outlined">picture_as_pdf</span>
+              Descargar Guía (PDF 4.2 MB)
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <div class="snippets-grid">
+        <div class="snippet-card">
+          <div class="snippet-icon"><span class="material-symbols-outlined c-pri">psychology</span></div>
+          <h3>Enriquecimiento Cognitivo Diario</h3>
+          <p class="small muted">Los tapetes de olfato para perros y los alimentadores tipo puzzle para felinos reducen el cortisol hasta un 40%, canalizando conductas destructivas hacia retos mentales estimulantes.</p>
+        </div>
+        <div class="snippet-card">
+          <div class="snippet-icon"><span class="material-symbols-outlined c-ter">bathtub</span></div>
+          <h3>Pautas de Higiene Respetuosa</h3>
+          <p class="small muted">El cepillado diario disminuye la ingestión de bolas de pelo en gatos de manto semilargo y permite identificar a tiempo bultos o garrapatas adheridas en la piel de caninos.</p>
+        </div>
+      </div>
+    </section>
+  </div>
 </main>
-<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest docked full-width flat no shadows mt-16">
-<div class="w-full px-6 md:px-12 py-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-<div class="flex flex-col items-center md:items-start gap-2">
-<span class="text-headline-sm font-headline-sm font-bold text-primary dark:text-primary">Mundo Animal</span>
-<p class="text-body-sm font-body-sm text-on-surface-variant text-center md:text-left">
-          © 2024 Mundo Animal. Enciclopedia y Blog Familiar de Vida Animal.
-        </p>
-</div>
-<nav class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 text-label-md font-label-md">
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="index.html">Inicio</a>
-<a class="text-primary dark:text-primary underline" href="mascotas-comunes.html">Mascotas Comunes</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="mascotas-exoticas.html">Mascotas Exóticas</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="#">Curiosidades del Reino Animal</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="#">Guías de Bienestar</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="#">Aviso Legal y Ética</a>
-</nav>
-</div>
-</footer>
+
+
+<script src="comunes-script.js"></script>
 </body>
 </html>
